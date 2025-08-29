@@ -1,8 +1,8 @@
 # 📘 Monitoria de Fundamentos de Programação - GTI 2025.2
 
-Arquivo dos exercícios resolvidos em monitoria e materiais utilizados ;)  
+Arquivo dos exercícios resolvidos em monitoria e outros materiais utilizados ;)  
 
-## 📅 Horários da Monitoria
+## 📅 Horários
 
 **Sextas às 19h** pelo [Zoom](https://cesar.zoom.us/j/88466465859)
 
