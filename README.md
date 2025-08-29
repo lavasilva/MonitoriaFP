@@ -6,7 +6,7 @@ Arquivo dos exercícios resolvidos em monitoria e outros materiais utilizados ;)
 
 **Sextas às 19h** pelo [Zoom](https://cesar.zoom.us/j/88466465859)
 
-## 👩‍🏫💬 Como entro em contato com as monitoras?
+## 👩🏼‍🏫👩🏽‍🏫 Como entro em contato com as monitoras?
 
 <p align="center">
   <table>
