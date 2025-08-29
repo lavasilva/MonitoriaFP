@@ -1,0 +1,19 @@
+L1 = input('Digite V ou F:')
+L2 = input('Digite V ou F:')
+L3 = input('Digite V ou F:')
+
+if (L1 == "V"):
+    print("A")
+else:
+    if (L2 == "V"):
+        if (L3 == "V"):
+            print("B")
+        else:
+        print("C")
+        print("D")
+print("E")
+
+Resposta letra A: A
+Resposta letra B: CDE
+Resposta letra C: DE 
+Resposta letra D: BDE
