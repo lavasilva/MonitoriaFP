@@ -20,8 +20,9 @@ def main():
         print("Digite as respostas de 5 participantes:")
 
         for i in range(5):
-            curso = input(f"Participante {i+1} - Curso (Engenharia ou Direito): ")
-            integral = input(f"Participante {i+1} - Estuda integralmente? (S/N): ")
+            curso = input(f"Participante {i+1} - Curso (Engenharia ou Direito): ").strip()
+
+            integral = input(f"Participante {i+1} - Estuda integralmente? (S/N): ").strip().upper()
             # Grava no arquivo no formato "Curso,Resposta"
             arquivo.write(curso + "," + integral + "\n")
 
@@ -31,9 +32,16 @@ def main():
 
     with open(nome_arquivo, "r", encoding="utf-8") as arquivo:
         for linha in arquivo:
-            curso, integral = linha.strip().split(",")  # separa por vírgula
+            # Remove \n e espaços nas extremidades e separa por vírgula
+            partes = linha.strip().split(",")
+            if len(partes) != 2:
+                # linha mal-formatada, ignora
+                continue
 
-            if curso == "Engenharia" and integral == "S":
+            curso = partes[0].strip().lower()    # "engenharia" ou "direito"
+            integral = partes[1].strip().upper() # "S" ou "N"
+
+            if curso == "engenharia" and integral == "S":
                 engenharia_integral += 1
 
             if integral == "N":
